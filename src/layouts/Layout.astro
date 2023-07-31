@@ -6,6 +6,7 @@ import { Image } from "astro:assets";
 import logo from "../assets/logo-papa-muda.png";
 
 import "@fontsource/poppins";
+import "@fontsource/inter";
 
 interface Props {
   title: string;
@@ -27,8 +28,8 @@ const { title } = Astro.props;
   <body>
     <!-- Header including navbar and hero section -->
     <header class="bg-white dark:bg-gray-900">
-      <Navbar client:visible>
-        <Image slot="logoImg" src={logo} height={50} alt="Kontol" />
+      <Navbar client:idle>
+        <Image slot="logoImg" src={logo} height={80} alt="Logo Papa Muda" />
       </Navbar>
 
       <div class="container px-6 py-16 mx-auto">
@@ -38,27 +39,26 @@ const { title } = Astro.props;
               <h1
                 class="text-3xl font-semibold text-gray-800 dark:text-white lg:text-4xl"
               >
-                Best place to choose <br /> your{" "}
-                <span class="text-blue-500">clothes</span>
+                Bertumbuh bersama
+                <span class="text-orange-700">Papa</span>
               </h1>
 
               <p class="mt-3 text-gray-600 dark:text-gray-400">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
-                beatae error laborum ab amet sunt recusandae? Reiciendis natus
-                perspiciatis optio.
+                Kembangkan kebutuhan bisnis serta kinerja usaha anda dengan
+                memanfaatkan teknologi informasi bersama kami.
               </p>
 
               <button
                 class="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-blue-600 rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
               >
-                Shop Now
+                Portofolio Kami
               </button>
             </div>
           </div>
 
-          <div class="w-full mt-6 lg:mt-0 lg:w-1/2">
+          <div class="w-full mt-6 lg:mt-0 lg:w-[600px] h-[300px]">
             <LottieAnimation
-              src="https://lottie.host/3c5906ff-d71e-4579-9a7e-4528ce5ba844/Q9Pl0Mfsis.json"
+              src="https://lottie.host/89401cef-c063-41d5-b6fc-1a5df6f82660/bdBWpTHaZY.json"
               autoplay="visible"
               player="light"
             />
