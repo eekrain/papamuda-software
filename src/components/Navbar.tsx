@@ -53,19 +53,19 @@ const Header: Component<{ logoImg?: JSX.Element }> = (props) => {
               class="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0 font-title"
               href="#"
             >
-              Shop
+              Pembuatan Website
             </a>
             <a
               class="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0 font-title"
               href="#"
             >
-              Contact
+              Pembuatan Aplikasi
             </a>
             <a
               class="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0 font-title"
               href="#"
             >
-              About
+              Projects
             </a>
           </div>
         </div>

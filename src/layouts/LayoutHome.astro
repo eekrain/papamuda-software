@@ -7,6 +7,7 @@ import logo from "../assets/logo-papa-muda.png";
 
 import "@fontsource/poppins";
 import "@fontsource/inter";
+import Footer from "../components/Footer.astro";
 
 interface Props {
   title: string;
@@ -32,7 +33,7 @@ const { title } = Astro.props;
         <Image slot="logoImg" src={logo} height={80} alt="Logo Papa Muda" />
       </Navbar>
 
-      <div class="container px-6 py-16 mx-auto">
+      <div class="container px-6 pb-16 mx-auto">
         <div class="items-center lg:flex">
           <div class="w-full lg:w-1/2">
             <div class="lg:max-w-lg">
@@ -56,7 +57,8 @@ const { title } = Astro.props;
             </div>
           </div>
 
-          <div class="w-full mt-6 lg:mt-0 lg:w-[600px] h-[300px]">
+          <!-- <div class="w-full mt-6 lg:mt-0 lg:w-[600px] h-[300px] bg-red-300"> -->
+          <div class="w-[640px] h-[400px]">
             <LottieAnimation
               src="https://lottie.host/89401cef-c063-41d5-b6fc-1a5df6f82660/bdBWpTHaZY.json"
               autoplay="visible"
@@ -68,5 +70,7 @@ const { title } = Astro.props;
     </header>
 
     <slot />
+
+    <Footer />
   </body>
 </html>
