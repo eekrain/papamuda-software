@@ -42,14 +42,14 @@ const Header: Component<{ logoImg?: JSX.Element }> = (props) => {
             "opacity-0 -translate-x-full": !isMenuOpen(),
           }}
         >
-          <div class="flex flex-col md:flex-row md:mx-6">
+          <div class="flex flex-col md:flex-row lg:mx-6">
             <a
               class="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0 font-title"
               href="#"
             >
               Home
             </a>
-            <a
+            {/* <a
               class="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0 font-title"
               href="#"
             >
@@ -60,7 +60,7 @@ const Header: Component<{ logoImg?: JSX.Element }> = (props) => {
               href="#"
             >
               Pembuatan Aplikasi
-            </a>
+            </a> */}
             <a
               class="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0 font-title"
               href="#"
