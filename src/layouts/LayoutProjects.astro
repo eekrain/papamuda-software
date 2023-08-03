@@ -1,0 +1,83 @@
+---
+import Navbar from "../components/Navbar";
+import { Image } from "astro:assets";
+import logo from "../assets/logo-papa-muda.png";
+
+import "@fontsource/poppins";
+import "@fontsource/inter";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <!-- Hero -->
+    <div class="relative overflow-hidden">
+      <!-- Gradients -->
+      <div
+        aria-hidden="true"
+        class="flex absolute -top-[500px] left-1/2 transform -translate-x-1/2"
+      >
+        <div
+          class="bg-gradient-to-r from-orange-300/50 to-yellow-100 blur-3xl w-[25rem] h-[44rem] rotate-[-60deg] transform -translate-x-[10rem] dark:from-violet-900/50 dark:to-purple-900"
+        >
+        </div>
+        <div
+          class="bg-gradient-to-tl from-teal-50 via-blue-100 to-blue-50 blur-3xl w-[90rem] h-[50rem] rounded-fulls origin-top-left -rotate-12 -translate-x-[15rem] dark:from-indigo-900/70 dark:via-indigo-900/70 dark:to-blue-900/70"
+        >
+        </div>
+      </div>
+      <!-- End Gradients -->
+
+      <div class="relative z-10">
+        <!-- Header including navbar and hero section -->
+        <header>
+          <Navbar client:idle bgColorClass="bg-transparent">
+            <Image slot="logoImg" src={logo} height={80} alt="Logo Papa Muda" />
+          </Navbar>
+          <div
+            class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-10 lg:pb-16"
+          >
+            <div class="max-w-2xl text-center mx-auto">
+              <!-- Title -->
+              <div class="mt-5 max-w-2xl">
+                <h1
+                  class="block font-semibold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-gray-200"
+                >
+                  Project Terakhir <span class="text-orange-700">Papa</span>
+                </h1>
+                <!-- End Title -->
+
+                <div class="mt-5 max-w-3xl">
+                  <p class="text-lg text-gray-600 dark:text-gray-400">
+                    Kamu ga usah khawatir sama <span class="text-orange-700"
+                      >Papa</span
+                    >. Coba deh lihat-lihat aja dulu project yang pernah Papa
+                    buat di bawah.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- End Hero -->
+      </div>
+      <slot />
+      <Footer />
+    </div>
+  </body>
+</html>

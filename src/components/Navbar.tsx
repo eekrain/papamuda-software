@@ -1,14 +1,20 @@
 import { Component, JSX, Show, createSignal } from "solid-js";
 
-const Header: Component<{ logoImg?: JSX.Element }> = (props) => {
+const Header: Component<{ logoImg?: JSX.Element; bgColorClass?: string }> = (
+  props
+) => {
   const [isMenuOpen, setMenuOpen] = createSignal(false);
 
   const toggleOpenMenu = () => {
     setMenuOpen((prev) => !prev);
   };
 
+  const bgColorClass = props.bgColorClass
+    ? props.bgColorClass
+    : "bg-white dark:bg-gray-900";
+
   return (
-    <nav class="relative bg-white dark:bg-gray-900">
+    <nav class={`relative ${bgColorClass}`}>
       <div class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
         <div class="flex items-center justify-between">
           <a href="#" class="flex items-center">
@@ -45,7 +51,7 @@ const Header: Component<{ logoImg?: JSX.Element }> = (props) => {
           <div class="flex flex-col md:flex-row lg:mx-6">
             <a
               class="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0 font-title"
-              href="#"
+              href="/"
             >
               Home
             </a>
@@ -63,7 +69,7 @@ const Header: Component<{ logoImg?: JSX.Element }> = (props) => {
             </a> */}
             <a
               class="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0 font-title"
-              href="#"
+              href="/projects"
             >
               Projects
             </a>
