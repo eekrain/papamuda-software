@@ -60,11 +60,10 @@ const { title, description, pubDate, updatedDate, heroImage, otherImage } =
           <!-- End Hero -->
         </div>
         <article class="container mx-auto px-6">
-          <div class="flex w-full">
+          <div class="flex flex-col lg:flex-row w-full">
             <div class="lg:w-1/2 flex justify-center items-center">
-              <div>
-                <Image src={heroImage} alt="Gambar project" />
-              </div>
+              <div class="flex w-3/4 lg:w-full">
+                <Image src={heroImage} alt="Gambar project" /></div>
             </div>
             <div class="w-full px-4 lg:w-1/2 xl:w-5/12 pt-10">
               <div class="relative rounded-lg bg-white p-6 shadow-lg">

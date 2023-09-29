@@ -17,7 +17,7 @@ const Header: Component<{ logoImg?: JSX.Element; bgColorClass?: string }> = (
     <nav class={`relative ${bgColorClass}`}>
       <div class="container py-4 mx-auto md:flex md:justify-between md:items-center">
         <div class="flex items-center justify-between">
-          <a href="#" class="flex items-center">
+          <a href="/" class="flex items-center">
             {props.logoImg}
             <div class="flex flex-col font-title">
               <h1 class="text-lg text-gray-800 font-semibold border-b border-gray-200">
