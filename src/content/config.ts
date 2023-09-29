@@ -5,7 +5,9 @@ const project = defineCollection({
   schema: ({ image }) =>
     z.object({
       title: z.string(),
+      serviceType: z.string(),
       description: z.string(),
+      backgroundColorClass: z.string(),
       // Transform string to Date object
       pubDate: z
         .string()

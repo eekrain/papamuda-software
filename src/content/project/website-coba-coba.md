@@ -1,5 +1,5 @@
 ---
-title: "Website Marketing Hyundai Samarinda"
+title: "Website Coba COba"
 description: "Membangun website marketing untuk promosi penjualan Hyundai di area Samarinda."
 pubDate: "Jul 01 2022"
 heroImage: "../../assets/project/website-marketing-hyundai-samarinda/hero.png"
