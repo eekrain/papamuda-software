@@ -50,7 +50,9 @@ const { title } = Astro.props;
         <Image slot="logoImg" src={logo} height={80} alt="Logo Papa Muda" />
       </Navbar>
 
-      <div class="container mx-auto px-6 pb-16 lg:px-0">
+      <div
+        class="container mx-auto h-[calc(100vh-100px)] px-6 pb-16 md:h-auto lg:px-0"
+      >
         <div class="flex flex-col-reverse items-center lg:flex-row">
           <div class="w-full lg:w-1/2">
             <div class="lg:max-w-lg">
@@ -88,7 +90,7 @@ const { title } = Astro.props;
           </div>
 
           <!-- <div class="w-full mt-6 lg:mt-0 lg:w-[600px] h-[300px] bg-red-300"> -->
-          <div class="w-3/4 lg:h-[400px] lg:w-[640px]">
+          <div class="h-[45vw] w-3/4 md:h-[40vw] lg:h-[400px] lg:w-[640px]">
             <LottieAnimation
               src="https://lottie.host/89401cef-c063-41d5-b6fc-1a5df6f82660/bdBWpTHaZY.json"
               autoplay="visible"
