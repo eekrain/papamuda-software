@@ -121,21 +121,21 @@ console.log("🚀 ~ file: index.astro:6 ~ posts:", posts);
 <LayoutProjects title="Project Papa | Papa Muda Software">
   <main>
     <!-- Card Blog -->
-    <div class="container px-6 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <div class="container mx-auto px-6 py-10 sm:px-6 lg:px-8 lg:py-14">
       <!-- Grid -->
-      <div class="grid lg:grid-cols-2 gap-6">
+      <div class="grid gap-6 lg:grid-cols-2">
         <!-- Card -->
         {
           posts.map((post) => (
             <a
-              class="group sm:flex shadow-lg rounded-xl"
+              class="group rounded-xl shadow-lg sm:flex"
               href={`/projects/${post.slug}`}
             >
-              <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[200px] sm:w-[250px] sm:h-[350px]">
-                <div class="flex h-full justify-center items-center">
+              <div class="relative h-[200px] w-full flex-shrink-0 overflow-hidden rounded-xl sm:h-[350px] sm:w-[250px]">
+                <div class="flex h-full items-center justify-center">
                   <div
                     class={
-                      "absolute w-full h-full top-0 left-0 " +
+                      "absolute left-0 top-0 h-full w-full " +
                       post.data.backgroundColorClass
                     }
                   >
@@ -161,13 +161,13 @@ console.log("🚀 ~ file: index.astro:6 ~ posts:", posts);
               </div>
 
               <div class="grow">
-                <div class="p-4 flex flex-col h-full sm:p-6">
+                <div class="flex h-full flex-col p-4 sm:p-6">
                   <div class="mb-3">
-                    <p class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+                    <p class="inline-flex items-center gap-1.5 rounded-md bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-800 dark:bg-gray-800 dark:text-gray-200">
                       {post.data.serviceType}
                     </p>
                   </div>
-                  <h3 class="text-lg sm:text-2xl font-semibold text-gray-800 group-hover:text-blue-600 dark:text-gray-300 dark:group-hover:text-white">
+                  <h3 class="text-lg font-semibold text-gray-800 group-hover:text-blue-600 dark:text-gray-300 dark:group-hover:text-white sm:text-2xl">
                     {post.data.title}
                   </h3>
                   <p class="mt-2 text-gray-600 dark:text-gray-400">
@@ -175,7 +175,7 @@ console.log("🚀 ~ file: index.astro:6 ~ posts:", posts);
                   </p>
 
                   <div class="mt-5 sm:mt-auto">
-                    <p class="text-xs text-gray-500">Feb 15, 2021</p>
+                    <p class="text-xs text-gray-500">{post.data.pubDate}</p>
                   </div>
                 </div>
               </div>

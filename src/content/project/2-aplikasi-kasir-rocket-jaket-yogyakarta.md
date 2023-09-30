@@ -1,10 +1,10 @@
 ---
 title: "Aplikasi Kasir Rocket Jaket Yogyakarta"
 description: "Membangun aplikasi kasir POS untuk mempermudah manajemen transaksi pada toko-toko cabang yang terdaftar."
-pubDate: "Jul 01 2022"
+pubDate: "September 2022"
 heroImage: "../../assets/project/aplikasi-kasir-rocket-jaket-yogyakarta/Hero.png"
-serviceType: "Website"
-backgroundColorClass: "bg-gradient-to-r from-cyan-500 to-blue-500"
+serviceType: "Mobile App"
+backgroundColorClass: "bg-gradient-to-r from-orange-500 to-red-500"
 otherImage:
   [
     "../../assets/project/aplikasi-kasir-rocket-jaket-yogyakarta/Picture1.png",
@@ -16,4 +16,4 @@ otherImage:
   ]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Aplikasi kasir yang dibuat khusus untuk Toko Rocket Jaket Yogyakarta guna mempermudah proses pencatatan transaksi penjualan. Aplikasi ini memudahkan dalam memonitor stok barang, serta dapat diakses oleh semua cabang. Juga terdapat fitur absensi karyawan menggunakan foto dan GPS untuk validasi absen masuk dan keluar. Aplikasi ini merupakan aplikasi mobile yang dibangun menggunakan framework React Native.

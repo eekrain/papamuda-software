@@ -9,10 +9,7 @@ const project = defineCollection({
       description: z.string(),
       backgroundColorClass: z.string(),
       // Transform string to Date object
-      pubDate: z
-        .string()
-        .or(z.date())
-        .transform((val) => new Date(val)),
+      pubDate: z.string(),
       updatedDate: z
         .string()
         .optional()
